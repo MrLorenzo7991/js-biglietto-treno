@@ -10,11 +10,11 @@
 //Calcolo prezzo
     prezzo = kilometri * prezzoKm;
     if (eta < 18) {
-        prezzoFinale = prezzo * scontoMinorenni
+        prezzoFinale = (prezzo * scontoMinorenni).toFixed(2)
     } else if (eta >= 65) {
-        prezzoFinale = prezzo * scontoAnziani
+        prezzoFinale = (prezzo * scontoAnziani).toFixed(2)
     } else {
-        prezzoFinale = prezzo
+        prezzoFinale = (prezzo).toFixed(2)
     }
-    
-    alert(prezzoFinale)
+//Visualizzazione prezzo
+    document.getElementById("prezzo").innerHTML = prezzoFinale;
