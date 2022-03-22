@@ -1,6 +1,6 @@
 //Input utente
-    etaUno = prompt("Inserisci l' età della prima persona");
-    etaDue = prompt("Inserisci l'eta della seconda persona");
+    const etaUno = prompt("Inserisci l' età della prima persona");
+    const etaDue = prompt("Inserisci l'eta della seconda persona");
 //Calcoli
     if (etaUno > etaDue) {
         alert ("La prima persona è più grande")
